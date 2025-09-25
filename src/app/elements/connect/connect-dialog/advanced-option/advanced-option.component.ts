@@ -154,6 +154,7 @@ export class ElementAdvancedOptionComponent implements OnChanges, OnInit {
         label: 'RDP file reusable',
         value: false,
         hidden: () => {
+          /*
           if (!this.connectMethod) return true;
           if (!gs.CONNECTION_TOKEN_REUSABLE) return true;
           if (this.connectMethod.component === 'razor') return false;
@@ -161,7 +162,7 @@ export class ElementAdvancedOptionComponent implements OnChanges, OnInit {
           if (this.connectMethod.component === 'tinker') {
             return this.connectOption.appletConnectMethod !== 'client';
           }
-
+          */
           return true;
         }
       },

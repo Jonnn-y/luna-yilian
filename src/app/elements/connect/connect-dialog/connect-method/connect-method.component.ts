@@ -131,6 +131,8 @@ export class ElementConnectMethodComponent implements OnInit {
   }
 
   canDownloadRDPFile(method): Boolean {
+    return false;
+    /*
     if (!this._settingSvc.hasXPack()) {
       return false;
     }
@@ -148,6 +150,7 @@ export class ElementConnectMethodComponent implements OnInit {
       return true;
     }
     return false;
+    */
   }
 
   downloadRDPFile(method) {
